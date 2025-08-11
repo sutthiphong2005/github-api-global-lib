@@ -1,0 +1,6 @@
+def call(Map config=[:]) {
+  checkout scmGit(branches: [[name: '*/master']], 
+                  extensions: [], 
+                  userRemoteConfigs: [[url: 'https://github.com/jenkins-docs/simple-node-js-react-npm-app.git']])
+
+}
